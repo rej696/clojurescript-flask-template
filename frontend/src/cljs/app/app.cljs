@@ -6,16 +6,20 @@
 
 ;; View ---------
 
-(def current-time (atom nil))
+; (def current-time (atom nil))
 
 
-(defn get-time [endpoint]
-  (go (let [response (<! (http/get endpoint))]
-        (reset! current-time (get (:body response) "time")))))
+(defn get-time [endpoint current-time]
+  (go (let [response (<! (http/get endpoint {:with-credentials? false}))]
+        (prn (:status response))
+        (prn (:time (:body response)))
+        (reset! current-time (:time (:body response))))))
 
 (defn component
   []
-  (get-time "http://localhost:5000/api/v1/time")
-  (.log js/console current-time)
-  [:h1
-   (str "The current time is " current-time)])
+  (let [current-time (atom nil)]
+    (get-time "http://localhost:5000/api/v1/time" current-time)
+    (prn current-time)
+    (fn []
+      [:h1
+       (str "The current time is " @current-time)])))
