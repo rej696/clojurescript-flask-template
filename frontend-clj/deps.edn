@@ -3,7 +3,8 @@
  
  :deps {org.clojure/clojurescript {:mvn/version "1.10.764"}
         com.bhauman/figwheel-main {:mvn/version "0.2.12"}
-        reagent/reagent           {:mvn/version "1.0.0"}}
+        reagent/reagent           {:mvn/version "1.0.0"}
+        cljs-http/cljs-http       {:mvn/version "0.1.46"}}
 
 
  :aliases
