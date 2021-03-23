@@ -1,15 +1,15 @@
 (defproject app "0.0.1"
   :description "Initial Test setup for clojurescript"
-  :dependencies [[org.clojure/clojure "1.9.0"]
-                 [binaryage/devtools "0.9.4"]
-                 [org.clojure/clojurescript "1.10.238" :scope "provided"]
-                 [reagent "0.7.0"]
+  :dependencies [[org.clojure/clojure "1.10.3"]
+                 [binaryage/devtools "1.0.0"]
+                 [org.clojure/clojurescript "1.10.764" :scope "provided"]
+                 [reagent "1.0.0"]
                  [cljs-http "0.1.46"]]
 
   :source-paths ["src/cljs"]
 
   :plugins [[lein-figwheel "0.5.16"]
-            [lein-cljsbuild "1.1.7" :exculsions [[org.clojure/clojure]]]]
+            [lein-cljsbuild "2.0.0" :exculsions [[org.clojure/clojure]]]]
 
   :cljsbuild {:builds
               [{:id "dev"
@@ -24,8 +24,8 @@
 
   :figwheel {:css-dirs ["resources/public/css"]}
 
-  :profiles {:dev {:dependencies [[binaryage/devtools "0.9.9"]
+  :profiles {:dev {:dependencies [[binaryage/devtools "1.0.0"]
                                   [figwheel-sidecar "0.5.16"]
-                                  [cider/piggieback "0.3.1"]]
+                                  [cider/piggieback "0.5.2"]]
                    :source-path "dev"
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"]}}) 
