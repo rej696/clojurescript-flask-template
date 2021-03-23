@@ -5,7 +5,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 
 WHITELIST = ['http://localhost:5000',
-             'http://localhost:3449']
+             'http://localhost:3449',
+             'http://localhost:9500']
 
 cors = CORS(
     app,
