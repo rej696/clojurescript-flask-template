@@ -11,6 +11,7 @@
 - [Clojurescript Reagent Tutorial](https://dhruvp.github.io/2015/02/23/mailchimip-clojure/)
 - [Clojurescript atoms Stackoverflow description](https://stackoverflow.com/questions/21826514/how-are-atoms-implemented-in-clojurescript)
 - [Reagent docs](https://github.com/reagent-project/reagent)
+- [Lein-cljsbuild docs](https://github.com/emezeske/lein-cljsbuild)
 
 
 ## Commands

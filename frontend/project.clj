@@ -3,13 +3,13 @@
   :dependencies [[org.clojure/clojure "1.10.3"]
                  [binaryage/devtools "1.0.0"]
                  [org.clojure/clojurescript "1.10.764" :scope "provided"]
-                 [reagent "1.0.0"]
+                 [reagent "0.9.1"]
                  [cljs-http "0.1.46"]]
 
   :source-paths ["src/cljs"]
 
   :plugins [[lein-figwheel "0.5.16"]
-            [lein-cljsbuild "2.0.0" :exculsions [[org.clojure/clojure]]]]
+            [lein-cljsbuild "1.1.8" :exculsions [[org.clojure/clojure]]]]
 
   :cljsbuild {:builds
               [{:id "dev"
