@@ -8,7 +8,7 @@
 
   :source-paths ["src/cljs"]
 
-  :plugins [[lein-figwheel "0.5.16"]
+  :plugins [[lein-figwheel "0.5.20"]
             [lein-cljsbuild "1.1.8" :exculsions [[org.clojure/clojure]]]]
 
   :cljsbuild {:builds
@@ -25,7 +25,7 @@
   :figwheel {:css-dirs ["resources/public/css"]}
 
   :profiles {:dev {:dependencies [[binaryage/devtools "1.0.0"]
-                                  [figwheel-sidecar "0.5.16"]
+                                  [figwheel-sidecar "0.5.20"]
                                   [cider/piggieback "0.5.2"]]
                    :source-path "dev"
                    :clean-targets ^{:protect false} ["resources/public/js/compiled"]}}) 
