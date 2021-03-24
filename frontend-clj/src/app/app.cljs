@@ -8,7 +8,7 @@
 ; get time from server
 ;-----------------------------------------------------
 
-(def time-api "http://localhost:5000/api/v1/time")
+(def time-api "http://127.0.0.1:5000/api/v1/time")
 
 (def current-time (r/atom nil))
 
