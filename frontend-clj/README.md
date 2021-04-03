@@ -22,9 +22,7 @@ set up project deps.edn
  
  :deps {org.clojure/clojurescript {:mvn/version "1.10.764"}
         com.bhauman/figwheel-main {:mvn/version "0.2.12"}
-        reagent/reagent           {:mvn/version "1.0.0"}
-        cljs-http/cljs-http       {:mvn/version "0.1.46"}}
-
+        reagent/reagent           {:mvn/version "1.0.0"}}
 
  :aliases
  {:dev {:main-opts ["-m"      "figwheel.main"
@@ -38,8 +36,7 @@ run figwheel as follows
 ## clj and vim-fireplace
 set up ~/.clojure/deps.edn as follows
 ```
-{
-  :aliases {
+{:aliases {
     :cider-clj {:extra-deps {org.clojure/clojure {:mvn/version "1.10.1"}
                              cider/cider-nrepl   {:mvn/version "0.25.9"}}
                 :main-opts ["-m" "nrepl.cmdline" "--middleware" "[cider.nrepl/cider-middleware]"]}
