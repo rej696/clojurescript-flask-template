@@ -73,10 +73,10 @@ Run nrepl as follows
 - `cqq` opens repl subwindow and pastes form under cursor
 
 ### Vim-SEXP commands
-- `\>)` barf to the right
+- `>)` barf to the right
 - `<(` barf to the left
 - `<)` slurp from the right
-- `\>(` slurp from the left
+- `>(` slurp from the left
 
 ## Useful Links
 
