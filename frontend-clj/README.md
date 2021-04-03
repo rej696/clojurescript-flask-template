@@ -66,17 +66,17 @@ Run nrepl as follows
 - `clj -M:cider-cljs` starts a clojurescript nrepl
 
 ### Vim-Fireplace commands
-- :FireplaceConnect connects to a repl
-- cqp (or :Eval) presents repl prompt
-- cqc opens repl subwindow
-- cpp evaluates form under cursor
-- cqq opens repl subwindow and pastes form under cursor
+- `:FireplaceConnect` connects to a repl
+- `cqp` (or `:Eval`) presents repl prompt
+- `cqc` opens repl subwindow
+- `cpp` evaluates form under cursor
+- `cqq` opens repl subwindow and pastes form under cursor
 
 ### Vim-SEXP commands
-- >) barf to the right
+- \>) barf to the right
 - <( barf to the left
 - <) slurp from the right
-- >( slurp from the left
+- \>( slurp from the left
 
 ## Useful Links
 
